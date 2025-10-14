@@ -1,0 +1,10 @@
+name: grvc_vrpn_mocap
+root: ~/
+
+windows:
+  - grvc_vrpn_mocap:
+      panes:
+        - sleep 1 && ros2 launch vrpn_mocap client.launch.yaml server:="localhost" port:=3883 sensor_data_qos:=false
+        - sleep 2 && ros2 run mocap_px4_bridge mocap_px4_bridge
+        - sleep 3 && MicroXRCEAgent udp4 -p 8888
+        - sleep 4 && ros2 topic list

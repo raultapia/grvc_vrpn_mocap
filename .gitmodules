@@ -1,0 +1,6 @@
+[submodule "vrpn_mocap"]
+	path = vrpn_mocap
+	url = https://github.com/alvinsunyixiao/vrpn_mocap
+[submodule "mocap_px4_bridge"]
+	path = mocap_px4_bridge
+	url = https://github.com/SaxionMechatronics/mocap_px4_bridge
