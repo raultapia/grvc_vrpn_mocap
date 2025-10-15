@@ -4,3 +4,6 @@
 [submodule "mocap_px4_bridge"]
 	path = mocap_px4_bridge
 	url = https://github.com/SaxionMechatronics/mocap_px4_bridge
+[submodule "px4_msgs"]
+	path = px4_msgs
+	url = https://github.com/PX4/px4_msgs
