@@ -6,7 +6,7 @@ windows:
       panes:
         - vrpn_mocap:
             - sleep 1
-            - ros2 launch vrpn_mocap client.launch.yaml server:="localhost" port:=3883 sensor_data_qos:=false
+            - ros2 launch vrpn_mocap client.launch.yaml server:=10.43.0.130 port:=3883 sensor_data_qos:=false
         - mocap_px4_bridge:
             - sleep 2
             - ros2 run mocap_px4_bridge mocap_px4_bridge --ros-args --params-file $(ros2 pkg prefix mocap_px4_bridge)/share/mocap_px4_bridge/config/params.yaml
